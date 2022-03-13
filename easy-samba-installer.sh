@@ -3,7 +3,7 @@
 
 echo "1) Install Packets"
 sudo apt install samba smbclient vim nano -y
-sudo mkdir -p /mnt/samba/{Public,Private}
+sudo mkdir -p /svr/samba/{Public,Private}
 
 echo "2) Creating an username, group, and setting prmissions"
 sudo addgroup smbgroup
