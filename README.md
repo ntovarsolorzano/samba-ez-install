@@ -15,10 +15,10 @@ smbclient -L localhost
 
 SEE MY FOLDERS FROM ANOTHER COMPUTER
 --------------------------------------------------------------------------------------------------------------------------
-First, find your private IP on the server, run:
-ifconfig 
-Then type that Private IP on any other computer in the File Explorer. If you use windows this should be in the format: 
-\\MY-PRIVATE-IP
+First, find your private IP on the server, run:  
+ifconfig   
+Then type that Private IP on any other computer in the File Explorer. If you use windows this should be in the format:   
+\\\MY-PRIVATE-IP  
 
 TESTED ON CLEAN INSTALL UBUNTU 20.04 AND DEBIAN 11 SUCCESSFULLY. 
 --------------------------------------------------------------------------------------------------------------------------
