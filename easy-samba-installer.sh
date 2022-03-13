@@ -18,7 +18,7 @@ sudo chmod o+wwx /svr/samba/Public
 
 echo "3) Set access to folders"
 echo "[Public]
-   comment = Publico 
+   comment = Public share 
    path = /svr/samba/Public
    guest ok = yes
    browseable = yes
