@@ -37,3 +37,4 @@ echo "[Private]
 sudo systemctl restart smbd.service
 sudo systemctl restart nmbd.service
 echo "Installation finished! Horray! :D"
+echo "If you are in the same LAN/Network Segment, you should be able to see your shared folders by typing the PrivateIP of THIS computer on another PC"
