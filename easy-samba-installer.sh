@@ -2,7 +2,7 @@
 # Nelson Tovar simple script :D
 
 echo "1) Install Packets"
-sudo apt-get update; sudo apt-get install samba smbclient vim nano -y
+sudo apt-get update; sudo apt-get upgrade; sudo apt-get install samba smbclient vim nano -y
 sudo mkdir -p /svr/samba/{Public,Private}
 
 echo "2) Creating an username, group, and setting prmissions"
