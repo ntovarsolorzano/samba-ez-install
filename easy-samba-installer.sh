@@ -8,7 +8,7 @@ sudo mkdir -p /svr/samba/{Public,Private}
 echo "2) Creating an username, group, and setting prmissions"
 sudo addgroup smbgroup
 echo "Write the username of samba admin"; read USER
-sudo useradd -s /usr/sbin/nologin $USER
+sudo useradd -aG /usr/sbin/nologin $USER
 sudo smbpasswd -a $USER
 sudo usermod -aG smbgroup $USER
 sudo chown root:smbgroup /svr/samba/
