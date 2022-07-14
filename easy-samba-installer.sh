@@ -10,7 +10,7 @@ sudo addgroup smbgroup
 echo "Write the username of samba admin"; read USER
 sudo useradd -aG /usr/sbin/nologin $USER
 sudo smbpasswd -a $USER
-sudo usermod -aG smbgroup $USER
+sudo usermod -s smbgroup $USER
 sudo chown root:smbgroup /svr/samba/
 sudo chmod g+w /svr/samba/
 sudo chmod o+wwx /svr/samba/Public
