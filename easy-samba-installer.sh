@@ -13,7 +13,7 @@ sudo smbpasswd -a $USER
 sudo usermod -aG smbgroup $USER
 sudo chown $USER:smbgroup /svr/samba/
 sudo chmod g+w /svr/samba/
-sudo chmod o+wwx /svr/samba/Public
+sudo chmod o+rwx /svr/samba/Public
 
 echo "3) Set access to folders"
 echo "[Public]
