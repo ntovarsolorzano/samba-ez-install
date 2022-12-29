@@ -39,3 +39,5 @@ sudo systemctl enable smbd.service
 sudo systemctl enable nmbd.service
 echo "Installation finished! Horray! :D"
 echo "If you are in the same LAN/Network Segment, you should be able to see your shared folders by typing the PrivateIP of THIS computer on another PC"
+echo "Ex. Suppose your private IP is 192.168.1.8, in windows explorer you should open \\192.168.1.8"
+echo "Don't forget to login using the user and password you just created"
