@@ -33,7 +33,9 @@ echo "[Private]
    #valid users = $USER
    guest ok = no " | sudo tee -a /etc/samba/smb.conf
 
-sudo systemctl restart smbd.service
-sudo systemctl restart nmbd.service
+sudo service smbd restart
+sudo service nmbd restart
+sudo systemctl enable smbd.service
+sudo systemctl enable nmbd.service
 echo "Installation finished! Horray! :D"
 echo "If you are in the same LAN/Network Segment, you should be able to see your shared folders by typing the PrivateIP of THIS computer on another PC"
