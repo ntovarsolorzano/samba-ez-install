@@ -11,7 +11,7 @@ echo "Write the username of samba admin"; read USER
 sudo useradd -s /usr/sbin/nologin $USER
 sudo smbpasswd -a $USER
 sudo usermod -aG smbgroup $USER
-sudo chown $USER:smbgroup /svr/samba/
+sudo chown -R $USER:smbgroup /svr/samba/
 sudo chmod g+w /svr/samba/
 sudo chmod o+rwx /svr/samba/Public
 
