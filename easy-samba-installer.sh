@@ -22,7 +22,6 @@ echo "[Public]
    guest ok = yes
    browseable = yes
    create mask = 755
-   read only = no
    writeable = yes" | sudo tee -a /etc/samba/smb.conf
 
 echo "[Private]
