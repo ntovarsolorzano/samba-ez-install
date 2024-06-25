@@ -17,12 +17,14 @@ sudo chmod o+rwx /svr/samba/Public
 
 echo "3) Set access to folders"
 echo "[Public]
-   comment = Public share 
+   comment = Public share
    path = /svr/samba/Public
    guest ok = yes
    browseable = yes
-   create mask = 755
-   writeable = yes" | sudo tee -a /etc/samba/smb.conf
+   writeable = yes
+   create mask = 0777
+   directory mask = 0777
+   force user = nobody" | sudo tee -a /etc/samba/smb.conf
 
 echo "[Private]
    comment = My private Share
